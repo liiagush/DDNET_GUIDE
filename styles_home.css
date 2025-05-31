@@ -1,5 +1,8 @@
 body {
-    background-color: #121212;
+    background-color: rgb(254, 247, 255);
+    flex-direction: column;
+    
+
 }
 
 .button {
@@ -61,19 +64,16 @@ body {
     
 .div1 header {
     text-align: center;
-    color: white;
+    color: rgb(103, 80, 164);
 }
-.div1 img {
-    display: block;
-    margin: 0 auto;
+.div1 a {
+  color: rgb(103, 80, 164);
 }
-.div2 a {
-    color: white;
+.div2 {
     font-size: 20px;
-    text-align: right;
+    text-align: center;
 }
-.div3 a {
-    color: white;
+.div3 {
     font-size: 20px;
     text-align: center;
     padding: 1rem;
@@ -94,3 +94,19 @@ body {
     .div6video { grid-area: 5 / 4 / 6 / 5; }
     
 
+.link {
+  color: rgb(144, 80, 164);
+  text-decoration: none;   /* убираем подчёркивание */
+}
+
+.link:hover {
+  color: rgb(144, 80, 164);
+}
+
+.link:visited {
+  color: rgb(144, 80, 164);
+}
+
+.link:active {
+  color: rgb(144, 80, 164);
+}
