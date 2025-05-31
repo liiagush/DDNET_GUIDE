@@ -1,98 +1,47 @@
 body {
-    background-color: rgb(254, 247, 255);
-    flex-direction: column;
-    
-
+  background-color: rgb(254, 247, 255);
+  font-family: 'Roboto Flex', sans-serif;
+  background: var(--surface);
+  color: #1C1B1F;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
-
-.button {
-    cursor: pointer;
-    position: relative;
-    padding: 10px 24px;
-    font-size: 18px;
-    color: rgb(193, 163, 98);
-    border: 2px solid rgb(193, 163, 98);
-    border-radius: 34px;
-    background-color: transparent;
-    font-weight: 600;
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
-    overflow: hidden;
-  }
   
-  .button::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    width: 50px;
-    height: 50px;
-    border-radius: inherit;
-    scale: 0;
-    z-index: -1;
-    background-color: rgb(193, 163, 98);
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .button:hover::before {
-    scale: 3;
-  }
-  
-  .button:hover {
-    color: #212121;
-    scale: 1.1;
-    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
-  }
-  
-  .button:active {
-    scale: 1;
-  }
-  
-  
-  
-.parent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .div1 { grid-area: 1 / 2 / 3 / 4; }
-    .div2 { grid-area: 3 / 2 / 4 / 3; }
-    .div3 { grid-area: 3 / 3 / 4 / 4; }
-    .div4 { grid-area: 4 / 2 / 5 / 4; }
-    
-.div1 header {
+header {
     text-align: center;
     color: rgb(103, 80, 164);
 }
-.div1 a {
-  color: rgb(103, 80, 164);
-}
-.div2 {
-    font-size: 20px;
-    text-align: center;
-}
-.div3 {
-    font-size: 20px;
-    text-align: center;
-    padding: 1rem;
-}
+
 .parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .div1text { grid-area: 1 / 2 / 2 / 3; }
-    .div2video { grid-area: 1 / 4 / 2 / 5; }
-    .div3text { grid-area: 3 / 2 / 4 / 3; }
-    .div4video { grid-area: 3 / 4 / 4 / 5; }
-    .div5text { grid-area: 5 / 2 / 6 / 3; }
-    .div6video { grid-area: 5 / 4 / 6 / 5; }
-    
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(9, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.divbig{
+  font-family: 'Roboto Flex', sans-serif;
+}
+.div1 { grid-area: 1 / 2 / 2 / 3; }
+.div2 { grid-area: 2 / 2 / 3 / 3; }
+.div3 { grid-area: 3 / 2 / 4 / 3; }
+.div4 { grid-area: 4 / 2 / 5 / 3; }
+.div5 { grid-area: 5 / 2 / 6 / 3; }
+.div6 { grid-area: 6 / 2 / 7 / 3; }
+.div7 { grid-area: 7 / 2 / 8 / 3; }
+.div8 { grid-area: 8 / 2 / 9 / 3; }
+.div9 { grid-area: 9 / 2 / 10 / 3; }
+.div10 { grid-area: 1 / 4 / 2 / 5; }
+.div11 { grid-area: 2 / 4 / 3 / 5; }
+.div12 { grid-area: 3 / 4 / 4 / 5; }
+.div13 { grid-area: 4 / 4 / 5 / 5; }
+.div14 { grid-area: 5 / 4 / 6 / 5; }
+.div15 { grid-area: 6 / 4 / 7 / 5; }
+.div16 { grid-area: 7 / 4 / 8 / 5; }
+.div17 { grid-area: 8 / 4 / 9 / 5; }
+.div18 { grid-area: 9 / 4 / 10 / 5; }
 
 .link {
   color: rgb(144, 80, 164);
